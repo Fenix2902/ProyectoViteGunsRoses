@@ -1,0 +1,7 @@
+.banner{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/musica-fb408.appspot.com/o/bannergunsroses.jpg?alt=media&token=cbe03cae-0e41-46ab-9a2d-1ded44fdb5fb');
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    padding: 25%;
+}
