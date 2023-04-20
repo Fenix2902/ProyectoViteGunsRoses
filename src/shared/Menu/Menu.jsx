@@ -6,7 +6,7 @@ export function Menu() {
       <nav className="navbar navbar-expand-lg menu navbar-dark fixed-top">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-            Home
+            Guns'N Roses
           </Link>
           <button
             className="navbar-toggler"
