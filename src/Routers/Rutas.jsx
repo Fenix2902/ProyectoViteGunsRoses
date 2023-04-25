@@ -3,6 +3,7 @@ import { Home } from "../Home/Home";
 import { History } from "../History/History";
 import { Members } from "../Members/Members";
 import { Menu } from "../shared/Menu/Menu";
+import { Footer } from "../shared/Footer/Footer";
 import { Shop } from "../Shop/Shop";
 
 export function Rutas() {
@@ -13,8 +14,9 @@ export function Rutas() {
         <Route path="/" element={<Home />} />
         <Route path="history" element={<History />} />
         <Route path="members" element={<Members />} />
-        <Route path="shop" element={<Shop/>}/>
+        <Route path="shop" element={<Shop />} />
       </Routes>
+      <Footer />
     </>
   );
 }

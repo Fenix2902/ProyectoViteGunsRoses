@@ -3,7 +3,7 @@ import "./Menu.css";
 export function Menu() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg menu navbar-dark fixed-top">
+      <nav className="navbar navbar-expand-lg menu navbar-dark fixed-top animate__animated animate__flash">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
             Guns'N Roses
