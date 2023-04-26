@@ -2,6 +2,7 @@ import './History.css'
 export function History(){
     return(
         <>
+        <br />
         <div className='container bg my-5'>
             <div className="row txt">
                 <div className="col-12 col-md-6">
