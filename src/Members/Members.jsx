@@ -1,4 +1,6 @@
-import './Members.css'
+import WOW from "wow.js";
+import { useEffect } from "react";
+import "./Members.css";
 export function Members() {
   let Members = [
     {
@@ -24,7 +26,7 @@ export function Members() {
       nacimiento: "22 de enero de 1965    (edad 58 años), Cleveland, Ohio",
     },
     {
-      id:4,
+      id: 4,
       nombre: "Richard Fortus",
       role: "Guitarrista rítmico",
       foto: "https://firebasestorage.googleapis.com/v0/b/musica-fb408.appspot.com/o/Richard%20Fortus.jpg?alt=media&token=159d7feb-263f-47b7-9f95-bb34aceda08f",
@@ -32,40 +34,50 @@ export function Members() {
         "17 de noviembre de 1966 (edad 56 años),San Luis, Misuri, Estados Unidos",
     },
     {
-      id:5,
+      id: 5,
       nombre: "Melissa Reese",
       role: "Tecladista y Sintetizadora",
-      foto: "https://firebasestorage.googleapis.com/v0/b/musica-fb408.appspot.com/o/melissaReese.jpg?alt=media&token=38cdce01-030e-4f68-adf7-9e42b36e6c9e",
+      foto: "https://firebasestorage.googleapis.com/v0/b/musica-fb408.appspot.com/o/Melissa%20Reese.jpg?alt=media&token=393fb3fe-1cbc-41be-a1a4-2ab01b0e4d17",
       nacimiento:
         "1 de marzo de 1990 (edad 33 años), Seattle, Washington, Estados Unidos",
-    }
+    },
+    {
+      id: 6,
+      nombre: "Duff McKagan",
+      role: "Bajista",
+      foto: "https://firebasestorage.googleapis.com/v0/b/musica-fb408.appspot.com/o/duff-mckagan.jpg?alt=media&token=01df54e0-14b8-4fd0-852f-535326ef8435",
+      nacimiento:
+        "5 de febrero de 1964 (edad 59 años), Seattle, Washington, Estados Unidos",
+    },
   ];
-
+  useEffect(function () {
+    const wow = new WOW();
+    wow.init();
+  }, []);
   return (
-    <>   
+    <>
       <div className="container-fluid bg-img mt-5">
-      <div className="row row-cols-1 row-cols-md-2 g-3 mt-5">
-        {Members.map(function (Member) {
-          return (
-            <div key={Member.id}>
-              <div className="col m-2">
-                <div className="card h-100 shadow bg-img">
-                  <h3 className="fw-bold text-center">{Member.nombre}</h3>
-                  <img
-                    src={Member.foto}
-                    alt="foto"
-                    className="img-fluid w-100 h-100"
-                  />
-                  <h4 className="text-center mt-3">Rol: {Member.role}</h4>
-                  <h5 className="m-3">Nacimiento: {Member.nacimiento}</h5>
+        <div className="row row-cols-1 row-cols-md-2 g-3 mt-5 mx-3 wow animate__animated animate__backInLeft">
+          {Members.map(function (Member) {
+            return (
+              <div key={Member.id}>
+                <div className="col m-2">
+                  <div className="card h-100 shadow bg-img text-light">
+                    <h3 className="fw-bold text-center">{Member.nombre}</h3>
+                    <img
+                      src={Member.foto}
+                      alt="foto"
+                      className="img-fluid w-100 h-100 radius"
+                    />
+                    <h4 className="text-center mt-3">Rol: {Member.role}</h4>
+                    <h5 className="m-3">Nacimiento: {Member.nacimiento}</h5>
+                  </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
-      </div>
-      
     </>
   );
 }

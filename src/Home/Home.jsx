@@ -2,7 +2,7 @@ import "./Home.css";
 export function Home() {
   return (
     <>
-      <section className="banner"/>
+    <section className="banner p-5"/>      
     </>
   );
 }
