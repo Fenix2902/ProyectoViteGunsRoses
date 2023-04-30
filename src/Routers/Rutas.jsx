@@ -5,6 +5,7 @@ import { Members } from "../Members/Members";
 import { Menu } from "../shared/Menu/Menu";
 import { Footer } from "../shared/Footer/Footer";
 import { Shop } from "../Shop/Shop";
+import { Fans } from "../Fans/Fans";
 
 export function Rutas() {
   return (
@@ -15,6 +16,7 @@ export function Rutas() {
         <Route path="history" element={<History />} />
         <Route path="members" element={<Members />} />
         <Route path="shop" element={<Shop />} />
+        <Route path="fans" element={<Fans/>}/>
       </Routes>
       <Footer />
     </>

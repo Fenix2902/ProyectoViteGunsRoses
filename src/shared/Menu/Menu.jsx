@@ -37,7 +37,7 @@ export function Menu() {
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link disabled">Disabled</a>
+                <Link className="navbar-brand" to="fans">Fans</Link>
               </li>
             </ul>
           </div>

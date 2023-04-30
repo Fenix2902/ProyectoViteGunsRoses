@@ -7,15 +7,15 @@ export function Shop() {
       descripcion: "Buso para Hombre negro talla unica",
       foto: "https://firebasestorage.googleapis.com/v0/b/musica-fb408.appspot.com/o/buzogunsroses.jpg?alt=media&token=b6417870-5b73-4e45-8e59-751e6ab9f6d5",
       Precio:
-        "$10.000",
+        "$55.000",
     },
     {
       id: 1,
-      Producto: "Buso Guns'n Roses",
-      descripcion: "Buso para Hombre negro talla unica",
+      Producto: "Camiseta Guns'n Roses",
+      descripcion: "Camiseta para Hombre negro talla unica",
       foto: "https://firebasestorage.googleapis.com/v0/b/musica-fb408.appspot.com/o/camiseta%20axlrose.jpg?alt=media&token=22f3a4f0-9f31-42c1-a717-5b33b139a26e",
       Precio:
-        "$10.000",
+        "$35.000",
     },
     {
       id: 1,
@@ -23,15 +23,15 @@ export function Shop() {
       descripcion: "Gorra para Hombre negro talla unica",
       foto: "https://firebasestorage.googleapis.com/v0/b/musica-fb408.appspot.com/o/gorra.jpg?alt=media&token=832451e7-59fe-42bd-aec5-79bee1d5eccc",
       Precio:
-        "$10.000",
+        "$30.000",
     },
     {
       id: 1,
       Producto: "Vaso Guns'n Roses",
-      descripcion: "Buso para Hombre negro talla unica",
+      descripcion: "Vaso en diferentes diseños",
       foto: "https://firebasestorage.googleapis.com/v0/b/musica-fb408.appspot.com/o/vaso.jpg?alt=media&token=4fdc2577-69e5-4b2b-86ef-29f10ec4200b",
       Precio:
-        "$10.000",
+        "$20.000",
     },
   ];
   return (
@@ -80,14 +80,14 @@ export function Shop() {
                 />
                 <div className="container">
                   <div className="carousel-caption text-center">
-                    <h1>Example headline.</h1>
-                    <p>
+                    <h1>Buso Guns'n Roses</h1>
+                    {/* <p>
                       Some representative placeholder content for the first
                       slide of the carousel.
-                    </p>
+                    </p> */}
                     <p>
-                      <a className="btn btn-lg btn-primary" href="#">
-                        Sign up today
+                      <a className="btn btn-lg btn-primary" href="#foto">
+                        Ver
                       </a>
                     </p>
                   </div>
@@ -101,14 +101,14 @@ export function Shop() {
                 />
                 <div className="container">
                   <div className="carousel-caption">
-                    <h1>Another example headline.</h1>
-                    <p>
+                    <h1>Camiseta Guns'n Roses</h1>
+                    {/* <p>
                       Some representative placeholder content for the second
                       slide of the carousel.
-                    </p>
+                    </p> */}
                     <p>
-                      <a className="btn btn-lg btn-primary" href="#">
-                        Learn more
+                      <a className="btn btn-lg btn-primary" href="#foto">
+                        Ver
                       </a>
                     </p>
                   </div>
@@ -121,14 +121,14 @@ export function Shop() {
                 />
                 <div className="container">
                   <div className="carousel-caption text-center">
-                    <h1>One more for good measure.</h1>
-                    <p>
+                    <h1 className="text-dark">Gorra Guns'n Roses</h1>
+                    {/* <p>
                       Some representative placeholder content for the third
                       slide of this carousel.
-                    </p>
+                    </p> */}
                     <p>
-                      <a className="btn btn-lg btn-primary" href="#">
-                        Browse gallery
+                      <a className="btn btn-lg btn-primary" href="#foto">
+                        Ver
                       </a>
                     </p>
                   </div>
@@ -141,14 +141,14 @@ export function Shop() {
                 />
                 <div className="container">
                   <div className="carousel-caption text-center">
-                    <h1>One more for good measure.</h1>
-                    <p>
+                    <h1>Vaso Guns'n Roses</h1>
+                    {/* <p>
                       Some representative placeholder content for the third
                       slide of this carousel.
-                    </p>
+                    </p> */}
                     <p>
-                      <a className="btn btn-lg btn-primary" href="#">
-                        Browse gallery
+                      <a className="btn btn-lg btn-primary" href="#foto">
+                        Ver
                       </a>
                     </p>
                   </div>
@@ -180,7 +180,7 @@ export function Shop() {
             {productos.map(function (producto) {
               return (
                 <div key={producto.id}>
-                  <div className="col m-2">
+                  <div className="col m-2" id="foto">
                     <div className="card h-100 shadow bg-img text-light">
                       <h3 className="fw-bold text-center">{producto.Producto}</h3>
                       <img
@@ -188,7 +188,7 @@ export function Shop() {
                         alt="foto"
                         className="img-fluid w-100 h-100 radius blancoNegro"
                       />
-                      <h4 className="text-center mt-3">Descripcion: {producto.descripcion}</h4>
+                      <h4 className="text-center mt-3">{producto.descripcion}</h4>
                       <h5 className="m-3 text-center">Precio: {producto.Precio}</h5>
                     </div>
                   </div>
