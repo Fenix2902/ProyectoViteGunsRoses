@@ -3,7 +3,7 @@ export function Shop() {
   let productos = [
     {
       id: 1,
-      Producto: "Buso Guns'n Roses",
+      Producto: "Buso",
       descripcion: "Buso para Hombre negro talla unica",
       foto: "https://firebasestorage.googleapis.com/v0/b/musica-fb408.appspot.com/o/buzogunsroses.jpg?alt=media&token=b6417870-5b73-4e45-8e59-751e6ab9f6d5",
       Precio:
@@ -11,7 +11,7 @@ export function Shop() {
     },
     {
       id: 1,
-      Producto: "Camiseta Guns'n Roses",
+      Producto: "Camiseta",
       descripcion: "Camiseta para Hombre negro talla unica",
       foto: "https://firebasestorage.googleapis.com/v0/b/musica-fb408.appspot.com/o/camiseta%20axlrose.jpg?alt=media&token=22f3a4f0-9f31-42c1-a717-5b33b139a26e",
       Precio:
@@ -19,15 +19,15 @@ export function Shop() {
     },
     {
       id: 1,
-      Producto: "Gorra Guns'n Roses",
+      Producto: "Gorra",
       descripcion: "Gorra para Hombre negro talla unica",
-      foto: "https://firebasestorage.googleapis.com/v0/b/musica-fb408.appspot.com/o/gorra.jpg?alt=media&token=832451e7-59fe-42bd-aec5-79bee1d5eccc",
+      foto: "https://firebasestorage.googleapis.com/v0/b/musica-fb408.appspot.com/o/gorra.jpg?alt=media&token=759c0938-c031-4c51-9cd4-e37d38ea4e1b",
       Precio:
         "$30.000",
     },
     {
       id: 1,
-      Producto: "Vaso Guns'n Roses",
+      Producto: "Vaso",
       descripcion: "Vaso en diferentes diseños",
       foto: "https://firebasestorage.googleapis.com/v0/b/musica-fb408.appspot.com/o/vaso.jpg?alt=media&token=4fdc2577-69e5-4b2b-86ef-29f10ec4200b",
       Precio:
@@ -74,9 +74,9 @@ export function Shop() {
             <div className="carousel-inner text-center">
               <div className="carousel-item active">
                 <img
-                  src="https://firebasestorage.googleapis.com/v0/b/musica-fb408.appspot.com/o/buzogunsroses.jpg?alt=media&token=b6417870-5b73-4e45-8e59-751e6ab9f6d5"
+                  src="https://firebasestorage.googleapis.com/v0/b/musica-fb408.appspot.com/o/buzogunsroses1.jpg?alt=media&token=a4d99d40-6837-4973-8817-b8c663438240"
                   alt=""
-                  className="img-fluid w-50 shop"
+                  className="img-fluid w-100 shop"
                 />
                 <div className="container">
                   <div className="carousel-caption text-center">
@@ -95,9 +95,9 @@ export function Shop() {
               </div>
               <div className="carousel-item">
                 <img
-                  src="https://firebasestorage.googleapis.com/v0/b/musica-fb408.appspot.com/o/camiseta%20axlrose.jpg?alt=media&token=22f3a4f0-9f31-42c1-a717-5b33b139a26e"
+                  src="https://firebasestorage.googleapis.com/v0/b/musica-fb408.appspot.com/o/camiseta%20axlrose1.jpg?alt=media&token=6cd5757d-d125-421a-8082-6ffe7d50d4fd"
                   alt=""
-                  className="img-fluid w-50 shop"
+                  className="img-fluid w-100 shop"
                 />
                 <div className="container">
                   <div className="carousel-caption">
@@ -116,12 +116,12 @@ export function Shop() {
               </div>
               <div className="carousel-item">
                 <img
-                  src="https://firebasestorage.googleapis.com/v0/b/musica-fb408.appspot.com/o/gorra.jpg?alt=media&token=832451e7-59fe-42bd-aec5-79bee1d5eccc" alt="gorra"
-                  className="img-fluid w-50 shop "
+                  src="https://firebasestorage.googleapis.com/v0/b/musica-fb408.appspot.com/o/gorra1.jpg?alt=media&token=abd85da5-b908-4904-8944-c49990e6b4a0" alt="gorra"
+                  className="img-fluid w-100 shop "
                 />
                 <div className="container">
                   <div className="carousel-caption text-center">
-                    <h1 className="text-dark">Gorra Guns'n Roses</h1>
+                    <h1 className="text-light">Gorra Guns'n Roses</h1>
                     {/* <p>
                       Some representative placeholder content for the third
                       slide of this carousel.
@@ -136,8 +136,8 @@ export function Shop() {
               </div>
               <div className="carousel-item">
                 <img
-                  src="https://firebasestorage.googleapis.com/v0/b/musica-fb408.appspot.com/o/vaso.jpg?alt=media&token=4fdc2577-69e5-4b2b-86ef-29f10ec4200b" alt="vaso"
-                  className="img-fluid w-50 shop "
+                  src="https://firebasestorage.googleapis.com/v0/b/musica-fb408.appspot.com/o/vaso1.jpg?alt=media&token=c3f52fe5-545c-468e-8b47-905b5f4350b5" alt="vaso"
+                  className="img-fluid w-100 shop "
                 />
                 <div className="container">
                   <div className="carousel-caption text-center">
@@ -181,7 +181,7 @@ export function Shop() {
               return (
                 <div key={producto.id}>
                   <div className="col m-2" id="foto">
-                    <div className="card h-100 shadow bg-img text-light">
+                    <div className="h-100 shadow bg-img text-light">
                       <h3 className="fw-bold text-center">{producto.Producto}</h3>
                       <img
                         src={producto.foto}
