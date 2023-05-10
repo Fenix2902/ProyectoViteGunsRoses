@@ -54,6 +54,14 @@ export function Members() {
     const wow = new WOW();
     wow.init();
   }, []);
+
+  function devolverEvento(evento){
+    console.log(evento.target.classList.add("bg_gray"))
+  }
+  function quitarFiltro(evento){
+    console.log(evento.target.classList.remove("bg_gray"))
+  }
+
   return (
     <>
       <div className="container-fluid bg-img mt-5">
@@ -62,12 +70,14 @@ export function Members() {
             return (
               <div key={Member.id}>
                 <div className="col m-2">
-                  <div className="card h-100 shadow bg-img text-light">
+                  <div className="h-100 shadow bg-img text-light">
                     <h3 className="fw-bold text-center">{Member.nombre}</h3>
                     <img
                       src={Member.foto}
                       alt="foto"
                       className="img-fluid w-100 h-100 radius"
+                      onMouseOver={devolverEvento}
+                      onMouseOut={quitarFiltro}
                     />
                     <h4 className="text-center mt-3">Rol: {Member.role}</h4>
                     <h5 className="m-3">Nacimiento: {Member.nacimiento}</h5>

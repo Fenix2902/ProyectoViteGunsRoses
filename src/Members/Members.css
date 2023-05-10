@@ -22,3 +22,9 @@
 .radius{
   border-radius: 10%;
 }
+
+.bg_gray{
+  filter:grayscale(1);
+  transform: scale(1.05);
+}
+
