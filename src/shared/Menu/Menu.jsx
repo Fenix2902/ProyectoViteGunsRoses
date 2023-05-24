@@ -44,6 +44,11 @@ export function Menu() {
                   Hook
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="navbar-brand" to="music">
+                  Music
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
