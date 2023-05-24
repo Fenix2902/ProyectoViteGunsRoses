@@ -39,11 +39,11 @@ export function Menu() {
               <li className="nav-item">
                 <Link className="navbar-brand" to="fans">Fans</Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link className="navbar-brand" to="hooks">
                   Hook
                 </Link>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <Link className="navbar-brand" to="music">
                   Music

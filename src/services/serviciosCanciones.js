@@ -4,7 +4,7 @@ export async function consultarCanciones(){
     //1. PA' DONDE VAS OME--> URL+EP DEL SERVICIO-->HEADERS
     const IDARTISTA = "6XyY86QOPPrYVGvF9ch6wz"
     const URI = `https://api.spotify.com/v1/artists/${IDARTISTA}/top-tracks?market=us`
-    const TOKEN="Bearer BQAhmL1t9DztHPDKH5cgqLGxs4C4QK1KugZ1lYxspDiJr1reln7BkU2XXBNX8dFUWJPp3iMByKGfux6gSmGu5HMUUb4uHCvkbM_Y4jceXXeA-kIKh8E"
+    const TOKEN="Bearer BQBiDRPEZQeoNlYIYTdGTmfKXB7e-KtExe2K2fBQimTWumZGsLddMo2uJj0sDEEazKBaqoOsjisRZpcvDXzFoUWLaXErxDKMUCZYoRReknAuN_N4JJA"
 
     //2. QUE VAS HACER ALLA OME...
     //CONFIGURO LA PETICIÓN
